@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<meta id="viewport" name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Flipcoin Mobile App</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Language" content="en"/>
+<link rel="stylesheet" href="./headtails.css" type="text/css">
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="./flipcoin.js"></script>	
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" data-position="fixed">
+            <h1>Flip coin</h1>
+            <div data-role="navbar">
+                <!--ul>
+                    <li><a href="#about" data-transition="flip" data-icon="star">Aboutus</a></li>
+                    <li><a href="#contact" data-transition="flip" data-icon="grid">Contact</a></li>
+
+                </ul-->
+
+            </div>
+        </div>
+
+        <div data-role="content">
+		
+            <h3 class="maintext">Tap the coin to make a toss</h3>
+
+            <div>
+
+<img id="myImage1" class="play"  width="100" height="100"  onclick="startFunction()">
+<img src='./images/heads.jpg' class="play" id="myImage2" width="100" height="100"  onclick="startFunction()">
+<div id="coin" align="center" class="flip">
+ <img src='./images/24.jpg' id='frame24' class='frame' width="100" height="100"/>
+ <img src='./images/23.jpg' id='frame23' class='frame' width="100" height="100"/>
+ <img src='./images/22.jpg' id='frame22' class='frame' width="100" height="100"/>
+ <img src='./images/21.jpg' id='frame21' class='frame' width="100" height="100"/>
+ <img src='./images/20.jpg' id='frame20' class='frame' width="100" height="100"/>
+ <img src='./images/19.jpg' id='frame19' class='frame' width="100" height="100"/>
+ <img src='./images/18.jpg' id='frame18' class='frame' width="100" height="100"/>
+ <img src='./images/17.jpg' id='frame17' class='frame' width="100" height="100"/>
+ <img src='./images/16.jpg' id='frame16' class='frame' width="100" height="100"/>
+ <img src='./images/15.jpg' id='frame15' class='frame' width="100" height="100"/>
+ <img src='./images/14.jpg' id='frame14' class='frame' width="100" height="100"/>
+ <img src='./images/13.jpg' id='frame13' class='frame' width="100" height="100"/>
+ <img src='./images/12.jpg' id='frame12' class='frame' width="100" height="100"/>
+ <img src='./images/11.jpg' id='frame11' class='frame' width="100" height="100"/>
+ <img src='./images/10.jpg' id='frame10' class='frame' width="100" height="100"/>
+ <img src='./images/9.jpg' id='frame9' class='frame' width="100" height="100"/>
+ <img src='./images/8.jpg' id='frame8' class='frame' width="100" height="100"/>
+ <img src='./images/7.jpg' id='frame7' class='frame' width="100" height="100"/>
+ <img src='./images/6.jpg' id='frame6' class='frame' width="100" height="100"/>
+ <img src='./images/5.jpg' id='frame5' class='frame' width="100" height="100"/>
+ <img src='./images/4.jpg' id='frame4' class='frame' width="100" height="100"/>
+ <img src='./images/3.jpg' id='frame3' class='frame' width="100" height="100"/>
+ <img src='./images/2.jpg' id='frame2' class='frame' width="100" height="100"/>
+ <img src='./images/1.jpg' id='frame1' class='frame' width="100" height="100" />
+</div>
+ 
+ 		
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>Coin face: <span id="demo"></span></h4>
+        </div>
+    </div>
+
+
+    <div data-role="page" id="about">
+
+        <div data-role="header" data-position="fixed">
+            <a href="#home" data-icon="arrow-l" data-role="button">Back</a>
+            <h1>AboutUs </h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#contact" data-icon="grid">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="true">
+                    <h3>Links</h3>
+                    <div data-role="controlgroup">
+                        <a href="map.html" data-ajax="false" data-rel="external" data-role="button" data-icon="star" data-iconpos="left" data-theme="e">Beautiful Home</a>
+                        <a href="http://www.facebook.com" target="_blank" data-role="button" data-icon="star" data-iconpos="left" data-theme="d">Facebook</a>
+                        <a href="#" data-role="button" data-icon="star" data-iconpos="left" data-theme="b">Twitter</a>
+                    </div>
+
+                </div>
+
+                <!--a href="Dynamicpage.html" data-ajax="true" data-rel="external" data-role="button" data-icon="grid" data-iconpos="left" data-theme="e">Bollywood</a-->
+                <!--a href="dynamicpage.html" data-role="button" data-icon="info" >Bollywood</a-->
+
+                <div data-role="collapsible" data-collapsed="true">
+                    <h3>Image</h3>
+                    <img border="0" src="images/ducks.jpg" width="400" height="300" />
+                    <br />
+
+                </div>
+
+
+                <div data-role="collapsible" data-collapsed="true">
+                    <h3>Slideshow</h3>
+                    <p>Content</p>
+                </div>
+            </div>
+
+
+        </div>
+       
+
+        <a href="dynamicpage.html" data-ajax="false" data-role="button" data-icon="info" data-iconpos="left" data-theme="e">Bollywood</a>
+        <a href="imagepage.html" data-ajax="false" data-role="button" data-icon="star" data-iconpos="left" data-theme="b">Image</a>
+
+        <!--a href="multipage.html" rel="external">Multi-page link</a-->
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Footer</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="contact">
+        <div data-role="header" data-position="fixed">
+            <a href="#home" data-icon="arrow-l" data-role="button">Back</a>
+            <h1>contact us</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#about" data-icon="grid">Aboutus</a></li>
+
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div data-role="content">
+            <h1>Contact Us</h1>
+
+            <div>
+                <form>
+                    <label for="text-18">Name:</label>
+                    <input id="text-18" name="text-18" type="text">
+                    <label for="text-18">Email: </label>
+                    <input id="text-19" name="text-19" type="text" data-clear-btn="true">
+                    <label for="text-18">Address:</label>
+                    <input id="text-181" name="text-18" data-clear-btn="true" type="text">
+                    <label for="textarea-18">Message:</label>
+                    <textarea id="textarea-18" cols="40" rows="8" name="textarea-18"></textarea>
+                </form>
+                <input value="Send" type="submit">
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>Footer</h4>
+        </div>
+    </div>
+
+<script>
+document.getElementById('coin').style.visibility = 'hidden';
+document.getElementById('myImage1').style.visibility = 'hidden';
+
+function myStopFunction()
+{
+document.getElementById('coin').style.visibility = 'hidden';
+document.getElementById('myImage1').style.visibility = 'visible'; 
+document.getElementById('myImage2').style.visibility = 'hidden';
+document.getElementById('demo').style.visibility = 'visible';
+ 
+}
+function startFunction()
+{
+document.getElementById('coin').style.visibility = 'visible';
+document.getElementById('demo').style.visibility = 'hidden';
+document.getElementById('myImage2').style.visibility = 'hidden';
+document.getElementById('myImage1').style.visibility = 'hidden';
+
+setTimeout(function(){
+myStopFunction()
+},3200);
+
+setTimeout(function(){
+myFunction()
+},3200);
+}
+function myFunction()
+{
+val=Math.floor((Math.random()*10));
+var x="";
+
+if (val==0 || val==2 || val==4 || val==6 || val==8)
+  {
+  x="HEADS";
+document.getElementById("myImage1").src="./images/heads.jpg";
+  }
+else
+  {
+  x="TAILS";
+document.getElementById("myImage1").src="./images/tails.jpg";
+  }
+document.getElementById("demo").innerHTML=x;
+document.getElementById("demo1").innerHTML=val;
+}
+</script>
+
+</body>
+</html>
